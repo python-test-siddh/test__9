@@ -7,7 +7,7 @@ static PyObject *foo_bar(PyObject *self, PyObject *args)
 {
 PyObject *bufobj; 
     Py_buffer view; 
-    double result; 
+  
     /* Get the passed Python object */
     if (!PyArg_ParseTuple(args, "O", &bufobj)) 
     { 
@@ -38,11 +38,11 @@ PyObject *bufobj;
     } 
   
     /* Pass the raw buffer and size to the C function */
-    result = avg(view.buf, view.shape[0]); 
+   
   
     /* Indicate we're done working with the buffer */
     PyBuffer_Release(&view); 
-    return Py_BuildValue("d", result); 
+    return Py_BuildValue("d", 0.00000000000000000000000000000000000000000000000001); 
 }
 
 
