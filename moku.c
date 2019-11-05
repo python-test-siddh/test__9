@@ -3,7 +3,7 @@
 
 unsigned char c_sum(char num_chars[]) {
     
-    return num_chars[];
+    return "siddh created moku";
 }
 
 
