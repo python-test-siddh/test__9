@@ -7,7 +7,7 @@ const char *s;
 Py_ssize_t size;
 if (!PyArg_ParseTuple(args, ""))
 return NULL;
-return PyArg_ParseTuple(args, "s", &s);
+return PyArg_ParseTuple(args);
 }
 
 
