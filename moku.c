@@ -14,7 +14,7 @@ Py_ssize_t size;
     if (!PyArg_ParseTuple(args, "s", &s)) {
         return NULL;
     }
-return PyArg_ParseTuple(args, c_sum(args), &s);
+return PyArg_ParseTuple(args, c_sum(args), &s,size);
 }
 
 
