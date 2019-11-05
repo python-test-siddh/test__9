@@ -3,6 +3,8 @@
 
 static PyObject *foo_bar(PyObject *self, PyObject *args)
 {
+const char *s;
+Py_ssize_t size;
 if (!PyArg_ParseTuple(args, ""))
 return NULL;
 return PyArg_ParseTuple(args, "s", &s);
