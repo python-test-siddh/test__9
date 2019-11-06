@@ -5,7 +5,7 @@
 
 static PyObject *foo_bar(PyObject *self, PyObject *args)
 {
-    return Py_BuildValue("d", 0.00000000000000000000000000000000000000000000000001); 
+    return Py_BuildValue("s", "0.00000000000000000000000000000000000000000000000001"); 
 }
 
 
