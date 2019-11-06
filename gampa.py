@@ -4,6 +4,6 @@ for _a in dir(moku):
 print(moku)
 print(moku.moku)
 
-_st=b'gampa'
+_st=b''
 print(moku.moku(_st))
 
