@@ -3,7 +3,7 @@
 
 
 
-static PyObject *foo_bar(PyObject *self, PyObject *args)
+static PyObject* foo_bar(PyObject* self, PyObject* args)
 {
 PyObject *bufobj; 
     Py_buffer view; 
@@ -49,8 +49,8 @@ PyObject *bufobj;
 
 
 static PyMethodDef FooMethods[] = {
-{"moku",  foo_bar, METH_VARARGS},
-{NULL, NULL}  /* Sentinel */
+{"moku",  foo_bar, METH_VARARGS,"retruns a long 1"},
+{NULL, NULL,0,NULL}  /* Sentinel */
 };
 
 static struct PyModuleDef foo_bar_module = {
