@@ -29,19 +29,16 @@ PyObject *bufobj;
         return NULL; 
     } 
   
-    /* Check the type of items in the array */
-    if (strcmp(view.format, "d") != 0) 
-    { 
-        PyErr_SetString(PyExc_TypeError, "Expected an array of doubles"); 
-        PyBuffer_Release(&view); 
-        return NULL; 
-    } 
-  
+    
     /* Pass the raw buffer and size to the C function */
-   
+   char *char_nums;
+    if (!PyArg_ParseTuple(args, "s", &char_nums)) {
+        return NULL;
+    }
   
     /* Indicate we're done working with the buffer */
     PyBuffer_Release(&view); 
+    
     return Py_BuildValue("d", 0.00000000000000000000000000000000000000000000000001); 
 }
 
