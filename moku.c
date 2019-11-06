@@ -5,40 +5,6 @@
 
 static PyObject *foo_bar(PyObject *self, PyObject *args)
 {
-PyObject *bufobj; 
-    Py_buffer view; 
-  
-    /* Get the passed Python object */
-    if (!PyArg_ParseTuple(args, "O", &bufobj)) 
-    { 
-        return NULL; 
-    } 
-  
-    /* Attempt to extract buffer information from it */
-  
-    if (PyObject_GetBuffer(bufobj, &view, 
-                           PyBUF_ANY_CONTIGUOUS | PyBUF_FORMAT) == -1) 
-    { 
-        return NULL; 
-    } 
-  
-    if (view.ndim != 1) 
-    { 
-        PyErr_SetString(PyExc_TypeError, "Expected a 1-dimensional array"); 
-        PyBuffer_Release(&view); 
-        return NULL; 
-    } 
-  
-    
-    /* Pass the raw buffer and size to the C function */
-   char *char_nums;
-    if (!PyArg_ParseTuple(args, "s", &char_nums)) {
-        return NULL;
-    }
-  
-    /* Indicate we're done working with the buffer */
-    PyBuffer_Release(&view); 
-    
     return Py_BuildValue("d", 0.00000000000000000000000000000000000000000000000001); 
 }
 
