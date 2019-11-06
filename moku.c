@@ -5,7 +5,8 @@
 
 static PyObject *foo_bar(PyObject *self, PyObject *args)
 {
-      if (!PyArg_ParseTuple(args)) 
+      char *_ch;
+      if (!PyArg_ParseTuple(args,"c",&c)) 
       {
       return NULL;
    }
