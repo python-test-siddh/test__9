@@ -4,6 +4,6 @@ for _a in dir(moku):
 print(moku)
 print(moku.moku)
 
-_st='c   -------------------->  py'
+_st=b'c   -------------------->  py'
 print(moku.moku(_st))
 
