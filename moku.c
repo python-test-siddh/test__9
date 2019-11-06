@@ -3,7 +3,7 @@
 
 
 
-static PyObject* foo_bar(PyObject* self, PyObject* args)
+static PyObject *foo_bar(PyObject *self, PyObject *args)
 {
 PyObject *bufobj; 
     Py_buffer view; 
