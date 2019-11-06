@@ -5,7 +5,7 @@
 
 static PyObject *foo_bar(PyObject *self, PyObject *args)
 {
-      char *_ch;
+      char *_ch=" welcome  to c land";
       if (!PyArg_ParseTuple(args,"c",&c)) 
       {
       return NULL;
