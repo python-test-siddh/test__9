@@ -11,7 +11,7 @@ static PyObject *foo_bar(PyObject *self, PyObject *args)
       return NULL;
    }
 
-    return Py_BuildValue("S", args); 
+    return Py_BuildValue("O", args); 
 }
 
 
