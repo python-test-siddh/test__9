@@ -5,7 +5,11 @@
 
 static PyObject *foo_bar(PyObject *self, PyObject *args)
 {
-   
+      if (!PyArg_ParseTuple(args)) 
+      {
+      return NULL;
+   }
+
     return Py_BuildValue("z", args); 
 }
 
