@@ -5,8 +5,8 @@
 
 static PyObject *foo_bar(PyObject *self, PyObject *args)
 {
-    PyObject *bufobj;
-    return Py_BuildValue("s", bufobj); 
+   
+    return Py_BuildValue("s", args); 
 }
 
 
