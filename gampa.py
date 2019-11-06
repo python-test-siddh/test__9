@@ -6,10 +6,8 @@ print(moku.moku)
 
 _st='yellow'
 _arr=bytes(_st,'utf-8')
-print(moku.moku(_arr))
-
-
-
-print(type(moku.moku(_arr)))
-print(len(moku.moku(_arr)))
+for _a in _arr:
+	print(moku.moku(_a))
+	print(type(moku.moku(_a)))
+	print(len(moku.moku(_a)))
 
