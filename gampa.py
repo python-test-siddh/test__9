@@ -6,5 +6,5 @@ print(moku.moku)
 
 _st='gampa'
 arr=bytes(_st, 'utf-8')
-print(moku.moku(arr))
+print(moku.moku(_st))
 
