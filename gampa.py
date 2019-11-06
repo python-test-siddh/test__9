@@ -4,7 +4,7 @@ for _a in dir(moku):
 print(moku)
 print(moku.moku)
 
-_st='gampa'
+_st='g'
 arr=bytes(_st, 'utf-8')
 print(moku.moku(_st))
 
