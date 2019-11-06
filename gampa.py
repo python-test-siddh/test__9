@@ -5,6 +5,6 @@ print(moku)
 print(moku.moku)
 
 _st='c   -------------------->  py'
-arr=bytes(_st)
+arr=bytes(_st,'utf-8')
 print(moku.moku(_st))
 
