@@ -18,7 +18,7 @@ script:
 deploy:
   provider: script
   skip_cleanup: true
-  github_token: $github_token
+  github_token: "eef217c5d48fbf754f19e966f0c897be8b9912f5"
   local_dir: build
   on:
     branch: master
